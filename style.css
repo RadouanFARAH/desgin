@@ -1,0 +1,196 @@
+/* footer */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans';
+}
+footer{
+    background-color:#1D1D1B;
+    padding: 100px  5px;
+    overflow-wrap: break-word;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'DM Sans';
+}
+footer ul li{
+    margin: 10px 0;
+}
+footer .footer-menu{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+footer .footer-menu div{
+    margin: 25px 25px;
+}
+footer .footer-menu h4{
+    color: #5A9F7A;
+}
+
+footer .menu-list ul{
+    display: inline-table;
+    margin-right: 25px;
+}
+footer .adresses{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+footer .adresses div{
+    margin: 0 60px;
+}
+footer .adresses p{
+    color: white;
+}
+footer .adresses p span{
+    font-family: 'DM Serif Display', serif;
+    font-size: 94px;
+    color: #1D1D1B;
+    text-shadow: 0px 0px 2px #298B91;
+}
+footer #tel{
+    color: #298B91;
+}
+
+
+
+/* newsletter-form */
+
+.newsletter-form{
+    background-color: #5A9F7A;
+    background-image: url(./newsletter-background.svg);
+    background-repeat:repeat-x;
+    padding: 50px;
+}
+.newsletter-form .content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.newsletter-form .content .title {
+    padding: 5vw;
+    margin-bottom: 20PX;
+}
+.newsletter-form .content .title h2{
+    max-width: 400px;
+    color: white;
+}
+.newsletter-form .content .title hr{
+    margin-top: 20px;
+    width: 70px;
+    color: white;
+}
+
+.newsletter-form .content  form{
+    width: 350px;
+    max-width:768px;
+    display:flex;
+    flex-direction:column;
+}
+.newsletter-form .content label{
+    color: white;
+    font-weight: 600;
+    margin-bottom:15px;
+    position:relative;
+    border-bottom:1px solid #ddd;
+}
+.newsletter-form .content  input{
+    color: #1D1D1B;
+    width:100%;
+    padding:10px 0px;
+    margin-top:20px;
+    border:none;
+    background: transparent;
+    outline:none;
+}
+.newsletter-form .content input::placeholder{
+    opacity:0;
+}
+.newsletter-form .content span{
+    position:absolute;
+    top:0;
+    left:0;
+    transform:translateY(30px);
+    font-size:0.825em;
+    transition-duration:300ms;
+}
+.newsletter-form .content  label:focus-within > span,
+.newsletter-form .content input:not(:placeholder-shown) + span{
+    transform:translateY(0px);
+}
+.newsletter-form .content .checkbox{
+    margin-bottom: 20px;
+}
+.newsletter-form .content .checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.newsletter-form .content .checkbox label{
+    border: initial;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+}
+.newsletter-form .content .checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    background-color: #eee;
+  }
+  .newsletter-form .content .checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .newsletter-form .content .checkbox  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .newsletter-form .content .checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .newsletter-form .content .checkbox .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.newsletter-form .content  button{
+    display: flex;
+    padding: 10px;
+    padding-left: 20px;
+    justify-content: space-between;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+}
+.newsletter-form .content  button img{
+    padding-right: 10px;
+}
+/* tendances */
+
+.tendances .intro {
+    background-image: url(./tendance-bg.svg);
+    height: 800px;
+}
